@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Gallery</title>
+    <style>
+        * {
+       box-sizing: border-box;
+     }
+
+     body {
+       margin: 0;
+       font-family: Arial, sans-serif;
+       background-color: #f4f0e0;
+       color: #333;
+     }
+
+     header {
+       background-color: #f4f0e0;
+       padding: 20px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       
+       
+     }
+
+     header h1 {
+       margin: 0;
+       font-size: 36px;
+     }
+
+     nav ul {
+       list-style: none;
+       margin: 0;
+       padding: 0;
+       display: flex;
+     }
+
+     nav li {
+       margin-right: 20px;
+     }
+
+     nav a {
+       text-decoration: none;
+       color: #333;
+       font-weight: bold;
+       transition: all 0.3s ease-in-out;
+     }
+
+     nav a:hover {
+       color: #4f5f85;
+     }
+     hr {
+			border: none;
+			border-top: 2px solid black;
+			margin: 0;
+			padding: 0;
+		}
+
+		.line1 {
+			margin-bottom: 30px;
+		}
+
+		.line2 {
+			margin-top: 30px;
+            margin-bottom: 20px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+        .bookcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        }
+        .bookitem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        margin-bottom: 20px; 
+        }
+
+        .bookitem img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+        }
+
+        .bookitem h3 {
+        margin-top: 10px;
+        font-size: 18px;
+        }
+
+        .bookitem p {
+        margin-top: 5px;
+        font-size: 14px;
+        color: #666;
+        }
+
+        footer {
+        background-color: #e4e4d3;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        height: 60px;
+    }
+
+    footer a{
+      text-decoration: none;
+            color: #333;
+    }
+        header a{
+            text-decoration: none;
+            color: #333;
+        }
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>TitleTrove</h1></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Genre</li>
+            <li><a href="Task2_Gallery.html">Gallery</a></li>
+            <li><a href="Task3_About_us.html">About Us</a></li>
+            <li><a href="Task4_Contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        </header>
+        <div class="cotainer">
+            <hr class="line1">
+            <div class="center"><b>Book Gallery</b></div>
+            <hr class="line2">
+
+            <div class="bookcontainer">
+            <div class="bookitem">
+                <a href="the hunger games.jpg" target="_blank"><img src="the hunger games.jpg" alt="Book cover image"></a>
+                <h3>The Hunger Games</h3>
+                <p>Suzanne Collins</p>
+              </div>
+              <div class="bookitem">
+                <a href="the castle.jpg" target="_blank"><img src="the castle.jpg" alt="Book cover image"></a>
+                <h3>The Castle</h3>
+                <p>Franz Kafka</p>
+              </div>
+              <div class="bookitem">
+                <a href="David Copperfield.jpg" target="_blank"><img src="David Copperfield.jpg" alt="Book cover image"></a>
+                <h3>David Copperfield</h3>
+                <p>Charles Dickens</p>
+              </div>
+              <div class="bookitem">
+                <a href="the republic.jpg" target="_blank"><img src="the republic.jpg" alt="Book cover image"></a>
+                <h3>The Republic</h3>
+                <p>Plato</p>
+              </div>
+              <div class="bookitem">
+                <a href="don quixote.jpg" target="_blank"><img src="don quixote.jpg" alt="Book cover image"></a>
+                <h3>Don Quixote</h3>
+                <p>Cervantes</p>
+              </div>
+            </div>
+    </div>
+    <footer>
+
+        <p>&copy; 2023 My Company. All Rights Reserved. | Email: <a href="mailto:abc@example.com">abc@example.com</a></p>
+    
+    </footer>
+</body>
+</html>
