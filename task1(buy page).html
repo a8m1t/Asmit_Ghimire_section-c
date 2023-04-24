@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Book</title>
+    <style>
+         * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f0e0;
+        color: #333;
+      }
+
+      header {
+        background-color: #f4f0e0;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+        
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 36px;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      nav li {
+        margin-right: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+      }
+
+      nav a:hover {
+        color: #4f5f85;
+      }
+      
+     
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+      }
+        .bookimage {
+        flex: 0 0 240px;
+        margin-right: 50px;
+        margin-left: 20px;
+      }
+
+      .bookimage img {
+        max-width: 100%;
+      }       
+
+        .productinfo {
+          flex: 1;
+          border-bottom: 1px solid black;
+          margin-right: 10px;
+        }
+
+        .productinfo h2 {
+          font-size: 32px;
+          margin-top: 0;
+        }
+
+        .productinfo p {
+          font-size: 22px;
+          font-family:'Times New Roman', Times, serif;
+          margin-top: 5px;
+          color:#333;
+          
+        }
+
+        .rating {
+          font-size: 24px;
+          margin-top: 10px;
+        }
+
+        .rating .star {
+          color: rgb(187, 127, 90);
+        }
+
+        .rating-num {
+          margin-left: 10px;
+          color: #777;
+        }
+
+        .productinfo h4 {
+          font-size: 32px;
+          margin-top: 0;
+        }
+        .productinfo button{
+        display: block;
+        margin: 10px auto;
+        margin-left: 10px;
+        background-color: #6879a0;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        }
+        .productinfo button:hover {
+        background-color: #fff;
+        color: #4f5f85;
+        border: 2px solid #4f5f85;
+  } 
+      .aboutauthor{
+        
+        margin-left: 300px;
+
+  }
+        .aboutauthor img{
+          width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        }
+          
+      
+        footer {
+        background-color: #e4e4d3;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        height: 60px;
+    }
+    footer a{
+      text-decoration: none;
+            color: #333;
+    }
+    header a{
+            text-decoration: none;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+      <a href="index.html"><h1>TitleTrove</h1></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Genre</li>
+            <li><a href="Task2_Gallery.html">Gallery</a></li>
+            <li><a href="Task3_About_us.html">About Us</a></li>
+            <li><a href="Task4_Contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        </header>
+      <div class="container">
+          
+              <div class="bookimage">
+                <img src="don quixote.jpg" alt="Book Cover">
+              </div>
+              <div class="productinfo">
+                <h2>Don Quixote</h2>
+                <p><b>Author</b>: Miguel de Cervantes Saavedra</p>
+                <div class="rating">
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9733;</span>
+                  <span class="star">&#9734;</span>
+                  <span class="rating-num">(4.0)</span>
+                </div>
+               
+                <p>Don Quixote has become so entranced by reading chivalric romances that he determines to become a knight-errant himself. In the company of his faithful squire, Sancho Panza, his exploits blossom in all sorts of wonderful ways. While Quixote's fancy often leads him astray—he tilts at windmills, imagining them to be giants—Sancho acquires cunning and a certain sagacity. Sane madman and wise fool, they roam the world together, and together they have haunted readers' imaginations for nearly four hundred years.</p>
+                <br>
+                <p><b>Genres</b>: Classics, Fiction, Literature, Spanish Literature, Adventure, Historical Fiction, Novels  ...more</p>
+                <h4>Price: $10.00</h4>
+                <button>Buy</button>
+              </div>
+              <hr>
+              <div class="aboutauthor">
+                <h2>About the Author</h2>
+                <img src="author.jpg" alt="Miguel de Cervantes">
+                <p>Miguel de Cervantes Saavedra (1547-1616) was a Spanish writer and author of Don Quixote, considered one of the greatest novels in Western literature. Cervantes was born in Alcalá de Henares, Spain, and lived through a tumultuous period of Spanish history that included the Spanish Inquisition, the rise of the Spanish Empire, and the decline of the Spanish Golden Age. He served as a soldier, was captured by pirates and held for ransom, and worked as a tax collector, all the while writing poetry and plays. His most famous work, Don Quixote, was published in two parts in 1605 and 1615, and is widely regarded as one of the foundational texts of modern Western literature. Cervantes died on April 23, 1616, the same day as William Shakespeare.</p>
+              </div>
+              
+        </div>
+        <footer>
+
+          <p>&copy; 2023 My Company. All Rights Reserved. | Email: <a href="mailto:abc@example.com">abc@example.com</a></p>
+      
+      </footer>
+
+</body>
+</html>
