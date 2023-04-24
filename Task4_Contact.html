@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+       box-sizing: border-box;
+     }
+
+     body {
+       margin: 0;
+       font-family: Arial, sans-serif;
+       background-color: #f4f0e0;
+       color: #333;
+     }
+
+     header {
+       background-color: #f4f0e0;
+       padding: 20px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       
+       
+     }
+
+     header h1 {
+       margin: 0;
+       font-size: 36px;
+     }
+
+     nav ul {
+       list-style: none;
+       margin: 0;
+       padding: 0;
+       display: flex;
+     }
+
+     nav li {
+       margin-right: 20px;
+     }
+
+     nav a {
+       text-decoration: none;
+       color: #333;
+       font-weight: bold;
+       transition: all 0.3s ease-in-out;
+     }
+
+     nav a:hover {
+       color: #4f5f85;
+     }
+     header a{
+            text-decoration: none;
+            color: #333;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            }
+
+            .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            }
+
+            .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: none;
+            }
+
+            .contact-form button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            }
+
+            .contact-form button[type="submit"]:hover {
+            background-color: #3e8e41;
+            }
+
+            #status-message {
+            text-align: center;
+            margin-top: 20px;
+            }
+
+            footer {
+        background-color: #e4e4d3;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        height: 60px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+            }
+    
+    footer a{
+      text-decoration: none;
+            color: #333;
+    }
+    hr {
+			border: none;
+			border-top: 2px solid black;
+			margin: 0;
+			padding: 0;
+		}
+
+		.line1 {
+			margin-bottom: 30px;
+		}
+
+		.line2 {
+			margin-top: 30px;
+            margin-bottom: 20px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+
+
+</style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>TitleTrove</h1></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Genre</li>
+            <li><a href="Task2_Gallery.html">Gallery</a></li>
+            <li><a href="Task3_About_us.html">About Us</a></li>
+            <li><a href="Task4_Contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        </header>
+        <div class="container">
+            <hr class="line1">
+            <div class="center"><b>Contact Us</b></div>
+            <hr class="line2">
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form name="contactForm" onsubmit="return validateForm()">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                  <button type="submit">Submit</button>
+                </form>
+                <div id="status-message"></div>
+
+              </div>
+
+
+        </div>
+        <script>
+            function validateForm() {
+                var name = document.forms["contactForm"]["name"].value;
+                var email = document.forms["contactForm"]["email"].value;
+                var message = document.forms["contactForm"]["message"].value;
+                
+                if (name == "") {
+                    alert("Please enter your name.");
+                    return false;
+                }
+                
+                if (email == "") {
+                    alert("Please enter your email.");
+                    return false;
+                }
+                
+                if (message == "") {
+                    alert("Please enter your message.");
+                    return false;
+                }
+                
+                alert("Thank you for your message, " + name + "! We will get back to you shortly.");
+                return true;
+                }
+
+        </script>
+        <footer>
+
+            <p>&copy; 2023 My Company. All Rights Reserved. | Email: <a href="mailto:abc@example.com">abc@example.com</a></p>
+        
+        </footer>
+</body>
+</html>
